@@ -1,0 +1,4 @@
+# Prune the build context; .git stays (the image must hold the full mayhem-branch history).
+build
+doc
+ctrf-report.json

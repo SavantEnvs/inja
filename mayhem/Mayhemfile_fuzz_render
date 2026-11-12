@@ -1,0 +1,10 @@
+project: savantenvs/inja
+target: fuzz_render
+testsuite:
+  - https://$MAYHEM_DOMAIN/$MAYHEM_PROJECT/$MAYHEM_TARGET/testsuite.tar
+  - file://mayhem/fuzz_render/testsuite
+cmds:
+  - cmd: /mayhem/fuzz_render
+    libfuzzer: true
+    dictionary: /mayhem/mayhem/fuzz_render/fuzz_render.dict
+    timeout: 5

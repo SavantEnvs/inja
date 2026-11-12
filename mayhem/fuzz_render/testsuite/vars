@@ -1,0 +1,1 @@
+Hello {{ name }}! I come from {{ city }}, {{ names.1 }} and {{ brother.name }} {{ brother.daughter0.name }}.

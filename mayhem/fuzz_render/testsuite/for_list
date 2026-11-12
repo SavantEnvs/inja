@@ -1,0 +1,1 @@
+{% for n in names %}{{ loop.index }}:{{ n }}{% if not loop.is_last %}, {% endif %}{% endfor %}
